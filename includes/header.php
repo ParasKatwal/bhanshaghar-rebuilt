@@ -20,17 +20,63 @@
 </head>
 <body> 
 
-    <header>
-        <nav>
-            <ul>
-                <li><a class="active" href="#">HOME</a></li>
-                <li><a href="#">MENU</a></li>
-                <li><a href="#">RESTAURANTS</a></li>
-                <li><a href="#">ABOUT US</a></li>
-                <li><a id="poplog" class="poplog" href="#">LOGIN</a></li>
-            </ul>
-        </nav>
-        <div class="menu-toggle">
-            <i class="fa fa-bars" aria-hidden="true"></i>
+<header>
+    <nav>
+        <ul>
+            <li><a class="active" href="#">HOME</a></li>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">RESTAURANTS</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a id="poplog" class="poplog" href="#">LOGIN</a></li>
+        </ul>
+    </nav>
+    <div class="menu-toggle">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+</header>
+
+<section class="h-background">
+    <img src="assets_front/img/topphoto.jpg" class="h-img1" alt="">
+    <img src="assets_front/img/logo.jpg" class="logo" alt="">
+    <div class="social-media">
+        <a class="sm-btn" href="#">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="sm-btn" href="#">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a class="sm-btn" href="#">
+            <i class="fab fa-google-plus-g"></i>
+        </a>
+        <a class="sm-btn" href="#">
+            <i class="fab fa-twitter"></i>
+        </a>
+        <a class="sm-btn" href="#">
+            <i class="fab fa-youtube"></i>
+        </a>
+    </div>    
+</section>
+
+<section class="login">
+    <div class="log-box">
+        <div class="close">+</div>
+        <div class="lg">
+            <img src="image/lg.jpg" alt="">
         </div>
-    </header>
+        <form action="">
+            <label for="uname">User Name</label>
+            <input type="text" name="uname" id=""><br>
+            <label for="password">Password</label>
+            <input type="password" name="password" id=""><br>
+            <input type="submit" value="Log In"><br>
+        </form>
+        <p>OR</p>
+        <h3>LOGIN WITH</h3>
+        <div class="log-social-media">
+            <button><a href="#"><i class="fab fa-facebook-f"></i> facebook</a></button>
+            <button><a href="#"><i class="fab fa-google-plus-g"></i> google+</a></button>
+        </div>
+        <p>Don't have an account? <a href="#">Signup</a></p>
+        <p><a href="#">Forgot Password?</a></p>
+    </div>
+</section>
