@@ -63,9 +63,9 @@
         <div class="lg">
             <img src="image/lg.jpg" alt="">
         </div>
-        <form action="">
-            <label for="uname">User Name</label>
-            <input type="text" name="uname" id=""><br>
+        <form action="assets_back/login.class.php" method="post">
+            <label for="uname">Email</label>
+            <input type="text" name="email" id=""><br>
             <label for="password">Password</label>
             <input type="password" name="password" id=""><br>
             <input type="submit" value="Log In"><br>
@@ -76,7 +76,7 @@
             <button><a href="#"><i class="fab fa-facebook-f"></i> facebook</a></button>
             <button><a href="#"><i class="fab fa-google-plus-g"></i> google+</a></button>
         </div>
-        <p>Don't have an account? <a href="#">Signup</a></p>
+        <p>Don't have an account? <a href="signup.php">Signup</a></p>
         <p><a href="#">Forgot Password?</a></p>
     </div>
 </section>

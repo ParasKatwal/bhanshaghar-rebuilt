@@ -349,7 +349,7 @@ footer .map iframe {
   width: 90%;
   outline: none;
   font-size: 18px;
-  color: white;
+  color: black;
 }
 
 .signup form ::-webkit-input-placeholder {
