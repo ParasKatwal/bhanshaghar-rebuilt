@@ -21,6 +21,9 @@ if(isset($_GET['msg'])){
     
     if ($msg=='match')
         echo "<script>alert('email and password didn\'t match....')</script>";
+    
+    if ($msg=='novalidName')
+        echo "<script>alert('enter a valid name...')</script>";
 }
 
 include('includes/header.php') 
