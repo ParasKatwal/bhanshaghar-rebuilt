@@ -77,19 +77,50 @@ header{
 
 //FOOTER
 footer{
+    background: url(../img/footerbg.jpg);
+    padding: 30px;
     margin-top: 20px;
+    h3{
+        padding: 10px;
+        color: color(primary);
+    }
     .quick_menu{
         a{
             display: block;
+            padding: 10px;
+            color: color(primary);
         }
     }
-    .map{
-        iframe{
-            float: right;
+    .contact{
+        color: color(primary);
+        i{
+            padding: 10px;
+        }
+    }
+    .logo{
+        text-align: center;
+        img{
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            margin-top: auto;
+        }
+        h2{
+            color: color(primary);
+            padding: 10px;
+            font-style: italic;
         }
     }
 }
-
+.copyright{
+    background: color(primary);
+    color: white;
+    padding: 5px;
+    p{
+        padding: 0;
+        margin: 0;
+    }
+}
 // INDEX 
 .h-background{
     position: relative;
@@ -325,6 +356,53 @@ footer{
 
 }
 
+// MENU 
+.menu{
+    h1{
+        color: color(primary);
+        padding: 20px;
+    }
+    .menu-box{
+        background: color(primary);
+        color: white;
+        padding: 30px;
+        border-radius: 20px;
+        margin: 20px;
+        ul li{
+            padding: 10px;
+        }
+    }
+}
+
+// FOOD
+.food{
+    padding: 30px;
+    .food-img{  
+        img{
+            border: 8px solid color(primary);
+            width: 400px;
+            height: 500px;
+            object-fit: cover;
+        }
+    }
+    .food-info{
+        padding: 20px;
+        h2{
+            color: color(primary);
+            padding: 10px 0;
+        }
+        span{
+            color: color(primary);
+            font-size: 20px;
+        }
+        button{
+            color: white;
+            background: color(primary);
+            margin: 20px 0;
+            padding: 10px 30px;
+        }
+    }
+}
 
 // ANIMATION
 @keyframes aaa{

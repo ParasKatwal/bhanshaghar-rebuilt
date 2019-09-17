@@ -1,3 +1,6 @@
+<?php 
+    include('array.php') 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,10 +26,13 @@
 <header>
     <nav>
         <ul>
-            <li><a class="active" href="#">HOME</a></li>
-            <li><a href="#">MENU</a></li>
-            <li><a href="#">RESTAURANTS</a></li>
-            <li><a href="#">ABOUT US</a></li>
+            <?php
+                for($i=0; $i<count($navitem); $i++){  
+                    $link = trim(json_encode($navitem[$i]['link']),'"');
+                    $title = trim(json_encode($navitem[$i]['Title']),'"');
+                    echo "<li><a href='$link'>$title</a></li>";
+                }
+            ?>
             <li><a id="poplog" class="poplog" href="#">LOGIN</a></li>
         </ul>
     </nav>

@@ -78,15 +78,56 @@ header .menu-toggle {
 }
 
 footer {
+  background: url(../img/footerbg.jpg);
+  padding: 30px;
   margin-top: 20px;
+}
+
+footer h3 {
+  padding: 10px;
+  color: #ff3e3e;
 }
 
 footer .quick_menu a {
   display: block;
+  padding: 10px;
+  color: #ff3e3e;
 }
 
-footer .map iframe {
-  float: right;
+footer .contact {
+  color: #ff3e3e;
+}
+
+footer .contact i {
+  padding: 10px;
+}
+
+footer .logo {
+  text-align: center;
+}
+
+footer .logo img {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-top: auto;
+}
+
+footer .logo h2 {
+  color: #ff3e3e;
+  padding: 10px;
+  font-style: italic;
+}
+
+.copyright {
+  background: #ff3e3e;
+  color: white;
+  padding: 5px;
+}
+
+.copyright p {
+  padding: 0;
+  margin: 0;
 }
 
 .h-background {
@@ -349,7 +390,7 @@ footer .map iframe {
   width: 90%;
   outline: none;
   font-size: 18px;
-  color: black;
+  color: white;
 }
 
 .signup form ::-webkit-input-placeholder {
@@ -389,6 +430,56 @@ footer .map iframe {
   padding: 10px 30px;
   border: none;
   font-weight: bolder;
+}
+
+.menu h1 {
+  color: #ff3e3e;
+  padding: 20px;
+}
+
+.menu .menu-box {
+  background: #ff3e3e;
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+.menu .menu-box ul li {
+  padding: 10px;
+}
+
+.food {
+  padding: 30px;
+}
+
+.food .food-img img {
+  border: 8px solid #ff3e3e;
+  width: 400px;
+  height: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.food .food-info {
+  padding: 20px;
+}
+
+.food .food-info h2 {
+  color: #ff3e3e;
+  padding: 10px 0;
+}
+
+.food .food-info span {
+  color: #ff3e3e;
+  font-size: 20px;
+}
+
+.food .food-info button {
+  color: white;
+  background: #ff3e3e;
+  margin: 20px 0;
+  padding: 10px 30px;
 }
 
 @-webkit-keyframes aaa {
