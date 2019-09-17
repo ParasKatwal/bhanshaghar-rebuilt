@@ -27,5 +27,22 @@ $(document).ready(function(){
         $('.menu-toggle').removeClass('scroll');
     }
     })
+    $(window).on('scroll', function(){
+        if($(window).scrollTop()) {
+            $('nav').addClass('scroll');
+            $('.menu-toggle').addClass('scroll');
+        }
+        else {
+            $('nav').removeClass('scroll');
+            $('.menu-toggle').removeClass('scroll');
+        }
+    })
 
+    $('.quick_menu-slider').slick({
+        infinite: true,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+      });
 })

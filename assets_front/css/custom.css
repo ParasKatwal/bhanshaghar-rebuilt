@@ -28,6 +28,25 @@ a {
   background-repeat: no-repeat !important;
 }
 
+.title {
+  color: #ff3e3e;
+  padding: 30px;
+  position: relative;
+  text-align: center;
+}
+
+.title:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  width: 100px;
+  height: 2px;
+  background: #ff3e3e;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 header {
   position: fixed;
   top: 0;
@@ -40,7 +59,7 @@ header {
 header nav {
   float: right;
   display: block;
-  height: 50px;
+  border-radius: 10px;
 }
 
 header ul {
@@ -60,8 +79,14 @@ header li {
 header a {
   line-height: 50px;
   display: block;
-  padding: 20px;
+  padding: 10px 30px;
   font-size: 18px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+header a:hover {
+  color: #ff3e3e;
 }
 
 header .menu-toggle {
@@ -75,6 +100,10 @@ header .menu-toggle {
   text-align: center;
   border-radius: 20px;
   display: none;
+}
+
+header .scroll {
+  background: rgba(0, 0, 0, 0.5);
 }
 
 footer {
@@ -366,6 +395,92 @@ footer .logo h2 {
   color: white;
 }
 
+.quick_menu {
+  padding-bottom: 20px;
+}
+
+.quick_menu h1 {
+  padding: 20px;
+  color: #ff3e3e;
+}
+
+.quick_menu .item {
+  margin-top: 20px;
+  height: 100px;
+  width: 100px;
+  outline: none;
+}
+
+.quick_menu .item img {
+  height: 100px;
+  width: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.trending {
+  margin-top: 30px;
+}
+
+.trending .row {
+  margin-top: 20px;
+}
+
+.trending .trending_item {
+  overflow: hidden;
+  padding: 20px;
+}
+
+.trending .trending_item img {
+  position: relative;
+  width: 100%;
+}
+
+.trending .trending_item h4 {
+  color: #ff3e3e;
+  padding: 10px 0;
+}
+
+.trending .trending_item span {
+  font-size: 18px;
+}
+
+.trending .trending_item p {
+  font-size: 15px;
+}
+
+.trending .trending_item .info {
+  background: #f5f5f5;
+  padding: 30px;
+}
+
+.trending .trending_item .read-hover {
+  position: absolute;
+  top: 50px;
+  bottom: 250px;
+  left: 70px;
+  right: 70px;
+  color: white;
+  background: rgba(255, 62, 62, 0.5);
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+}
+
+.trending .trending_item .read-hover p {
+  font-size: 20px;
+}
+
+.trending .trending_item .read-hover i {
+  font-size: 40px;
+}
+
+.trending .trending_item:hover .read-hover {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
 .signup {
   margin-top: 30px;
 }
@@ -440,13 +555,14 @@ footer .logo h2 {
 .menu .menu-box {
   background: #ff3e3e;
   color: white;
-  padding: 30px;
+  padding: 20px;
   border-radius: 20px;
-  margin: 20px;
+  margin: 10px;
 }
 
 .menu .menu-box ul li {
   padding: 10px;
+  font-size: 18px;
 }
 
 .food {
