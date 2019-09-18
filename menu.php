@@ -33,6 +33,6 @@
             </div>
         </div>
     </div>
-</sec>
+</section>
 
 <?php include('includes/footer.php') ?>    
