@@ -20,6 +20,13 @@ class login extends db{
         if ($numrows==1){
             $row = $result->fetch_assoc();
             if(password_verify($this->password, $row['password'])){
+                session_start();
+                if(!isset( $_SESSION['admin'] ) ) {
+                  $_SESSION['admin'] = $row['first_name']." ".$row['last_name'];
+                }
+                if(!isset( $_SESSION['admin_id'] ) ) {
+                  $_SESSION['admin_id'] = $row['id'];
+                }
                 header('location:../welcome.php');
             }else{
                 header('location:../index.php?msg=match');

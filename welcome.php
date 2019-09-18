@@ -1,4 +1,20 @@
 <?php 
+    session_start();
+    
+   if(!isset( $_SESSION['admin'] ) ) {
+      header('location:index.php');
+    }
+    
+   if(isset($_GET['msg'])){
+    $msg=$_GET['msg'];
+    
+    if ($msg=='error')
+        echo "<script>alert('sorry, there was an error...')</script>";
+            
+    if ($msg=='success')
+        echo "<script>alert('Thank you for ordering food, you food will be delivered within a minute...')</script>";
+}
+
     include('includes/array.php') 
 ?>
 <!DOCTYPE html>
@@ -25,7 +41,8 @@
 <header>
     <nav>
         <ul>
-            <li><a class="logout" href="#">LOGOUT</a></li>
+            <li><a class="logout" href="cart.php">Cart</a></li>
+            <li><a class="logout" href="assets_back/logout.class.php">LOGOUT</a></li>
         </ul>
     </nav>
 </header>
@@ -52,9 +69,39 @@
 </section>
 
 <section class="user">
-    <h1 class="text-center title">Welcome, <span>Ram Prashad</span></h1>
+    <h1 class="text-center title">Welcome, <span><?php echo $_SESSION['admin']; ?></span></h1>
 </section>
-
+<section class="menu">
+    <div class="container">
+        <h1 class="text-center">Today's Menu</h1>
+        <div class="row d-flex justify-content-around flex-wrap">
+            <div class="menu-box col-sm-12 col-md-3">
+                <h4>Hot Drinks</h4>
+                <ul>
+                    <?php foreach($menuItem as $coffee => $item) { ?>
+                        <li class="center"><a href="food.php?item=<?php echo $item['id']; ?>"><?php echo $item['title'] ?></a><sup> NPR </sup><?php echo $item['price'] ?></li>
+                    <?php } ?>
+                </ul>
+            </div>
+            <div class="menu-box col-sm-12 col-md-3">
+                <h4>Cold Drinks</h4>
+                <ul>
+                    <?php foreach($menuItem2 as $drink => $item) { ?>
+                        <li class="center"><a href="food.php?item=<?php echo $item['id']; ?>"><?php echo $item['title'] ?></a><sup> NPR </sup><?php echo $item['price'] ?></li>
+                    <?php } ?>
+                </ul>
+            </div>
+            <div class="menu-box col-sm-12 col-md-3">
+                <h4>MoMo</h4>
+                <ul>
+                    <?php foreach($menuItem3 as $momo => $item) { ?>
+                        <li class="center"><a href="food.php?item=<?php echo $item['id']; ?>"><?php echo $item['title'] ?></a><sup> NPR </sup><?php echo $item['price'] ?></li>
+                    <?php } ?>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 <section class="recommendation">
     <div class="container">
     <h3>Recommendation of your taste</h3>
