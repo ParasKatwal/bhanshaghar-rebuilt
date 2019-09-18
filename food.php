@@ -103,12 +103,17 @@
                     <h2><?php echo $item_array['title']; ?></h2>
                     <p><?php echo $item_array['blurb']; ?></p>
                     <span>Price: NPR <?php echo $item_array['price']; ?></span><br/>
+                    <form action="assets_back/addcart.class.php" method="post">
+                    <span><label>Quantity: </label>&nbsp;&nbsp;<input type="number" style="width:80px;" value="1" name="item_quantity" class="form-control" name=""/></span><br />
+                    <input type="text" value="<?php echo $item_array['title'];?>" name="item_name" hidden="true"/>
+                    <input type="number" value="<?php echo $item_array['price'];?>" name="item_price" hidden="true"/>
+                    <input type="number" value="<?php echo $item_array['id'];?>" name="item_id" hidden="true"/>
                     <?php
                     if(!isset($_SESSION['admin'])){
                         echo '<button class="btn" onclick="notify_login();">Add to Cart</button>';
                     }
                     else{
-                        echo '<button class="btn"><a style="width:auto;height:auto;" href="#">Add to Cart</a></button>';
+                        echo '<button class="btn" type="submit">Add to Cart</a></button>';
                     }
                     ?>
                     
@@ -118,6 +123,7 @@
                             alert("please login to order the food...");
                         }
                     </script>
+                    </form>
                 </div>
             </div>
         </div>

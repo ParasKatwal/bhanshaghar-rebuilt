@@ -24,7 +24,7 @@ class login extends db{
                 if(!isset( $_SESSION['admin'] ) ) {
                   $_SESSION['admin'] = $row['first_name']." ".$row['last_name'];
                 }
-                if(!isset( $_SESSION['id'] ) ) {
+                if(!isset( $_SESSION['admin_id'] ) ) {
                   $_SESSION['admin_id'] = $row['id'];
                 }
                 header('location:../welcome.php');
