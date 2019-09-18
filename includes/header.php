@@ -23,11 +23,6 @@
     <!-- Slick -->
     <link rel="stylesheet" type="text/css" href="assets_front/css/slick.css"/>
     <link rel="stylesheet" type="text/css" href="assets_front/css/slick-theme.css"/>
-    <!-- OWL -->
-    <link rel="stylesheet" href="assets_front/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets_front/css/owl.theme.default.min.css">
-    <!-- LIGHTBOX -->
-    <link rel="stylesheet" href="assets_front/css/lightbox.min.css">
 </head>
 <body> 
 
