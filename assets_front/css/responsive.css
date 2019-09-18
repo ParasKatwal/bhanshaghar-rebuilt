@@ -1,0 +1,87 @@
+header{
+    padding: 0 20px;
+}
+header .menu-toggle{
+    margin: 20px;
+    display: block;
+    background: #ff3e3e;
+    color: white;
+}
+header nav{
+    position: absolute;
+    width: 400px;
+    height: auto;
+    background: #333;
+    top: 50px;
+    left: 150%;
+    transition: 0.5s;
+}
+header nav.active{
+    left: -300%;
+}
+header nav ul{
+    display: block;
+    text-align: center;
+}
+header nav ul li{
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 900px){
+    .h-background .logo{
+        width: 150px;
+        height: 150px;
+    }
+    .h-background .sm-btn{
+        width: 40px;
+        height: 40px;
+    }
+    .h-background .sm-btn i{
+        font-size: 18px;
+        line-height: 40px;
+    }
+    .quick_menu .item{
+        height: 80px;
+        width: 80px;
+    }
+    .quick_menu .item img{
+        height: 80px;
+        width: 80px;
+    }
+    footer .logo img{
+        height: 150px;
+        width: 150px;
+    }
+    footer .quick_menu a{
+        padding: 5px;
+        font-size: 14px;
+    }
+    footer .contact i{
+        padding: 5px;
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 600px){
+    header nav.active{
+        left: -250%;
+    }
+    .h-background .logo{
+        width: 100px;
+        height: 100px;
+    }
+    .h-background .sm-btn{
+        width: 30px;
+        height: 30px;
+    }
+    .h-background .sm-btn i{
+        font-size: 15px;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 600px){
+    header nav.active{
+        left: -200%;
+    }
+}
