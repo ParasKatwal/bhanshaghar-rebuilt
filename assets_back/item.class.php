@@ -25,7 +25,7 @@ class item extends db{
                 $item_array['id']=$id;
                 $item_array['title']=$title;
                 $item_array['price']=$price;
-                $item_array['img']=$image;
+                $item_array['image']=$image;
                 $item_array['blurb']=$blurb;             
             }
            return $item_array;

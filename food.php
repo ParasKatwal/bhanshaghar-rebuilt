@@ -97,7 +97,7 @@
         <div class="row">
             <div class="col-sm-12 d-flex">
                 <div class="food-img">
-                    <img src="assets_front/img/mo.jpg" alt="">
+                    <img src="assets_front/img/<?php echo $item_array['image']; ?>" alt="<?php echo $item_array['image']; ?>">
                 </div>
                 <div class="food-info">
                     <h2><?php echo $item_array['title']; ?></h2>
