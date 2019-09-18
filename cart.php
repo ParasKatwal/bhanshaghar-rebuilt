@@ -93,6 +93,7 @@ if(isset($_GET['msg'])){
                         }
                         echo "<tr style='font-weight:bold;'><td colspan='2'>Total</td><td>".$total."</td></tr>";
                         echo "<tr><td colspan='3'><button onclick='checkout();'>CHECK OUT</button></td></tr>";
+                        echo "<tr><td colspan='3'><a href='assets_back/resetcart.class.php'>Reset Cart</a></td></tr>";
                         
                         if(isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') 
                             $link = "https"; 
@@ -114,6 +115,7 @@ if(isset($_GET['msg'])){
                 }else{
                     echo "<td colspan='3'>There is no item in your cart<td>";
                 }
+                echo "<tr><td colspan='3'><a href='welcome.php'>Back</a></td></tr>";
                 ?>
             </table>
         </section>

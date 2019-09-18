@@ -22,12 +22,17 @@ class checkout extends db{
 
    
     public function insert(){     
-          $sql = "INSERT INTO food_order(user_id,orders,total_price,order_time) VALUES ($this->user_id, '$this->orders', '$this->total_price',$this->order_time)";
+          $sql = "INSERT INTO food_order(user_id,orders,total_price,order_time) VALUES ($this->user_id, '$this->orders', '$this->total_price','$this->order_time')";
             
           if ($this->connect()->query($sql) === TRUE) {
-              header('location:../index.php?msg=success');
+            if(isset($_SESSION['item']))
+                unset($_SESSION['item']);
+            if(isset($_SESSION['total']))
+                unset($_SESSION['total']);
+              header('location:../welcome.php?msg=success');
           } else {
-              header('location:../index.php?msg=error');
+             //echo "Error: " . $sql . "<br>" .$this->connect()->error;
+              header('location:../welcome.php?msg=error');
           } 
      }
 }

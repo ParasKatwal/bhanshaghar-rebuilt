@@ -38,7 +38,7 @@
                 <input type="text" name="phone" class="form-control" id="" placeholder="Enter phone no." required>
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary">Sign Up</button>
+            <button type="submit" class="btn btn-primary" name="signup" value="submit">Sign Up</button>
         </form>
     </div>
 </section>

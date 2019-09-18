@@ -52,17 +52,19 @@ class signup extends db{
     }
 }
 
-$conn = new db();
-$con = $conn->connect();
-$fname = mysqli_real_escape_string($con,$_POST['fname']);
-$lname = mysqli_real_escape_string($con,$_POST['lname']);
-$email = mysqli_real_escape_string($con,$_POST['email']);
-$pwd = mysqli_real_escape_string($con,$_POST['pwd']);
-$phone = mysqli_real_escape_string($con,$_POST['phone']);
-$address = mysqli_real_escape_string($con,$_POST['address']);
-
-$sign_up = new signup($fname,$lname,$email,$pwd,$phone,$address);
-$sign_up->insert();
-
-$conn->connect()->close();
+if(isset($_POST['signup'])){
+    $conn = new db();
+    $con = $conn->connect();
+    $fname = mysqli_real_escape_string($con,$_POST['fname']);
+    $lname = mysqli_real_escape_string($con,$_POST['lname']);
+    $email = mysqli_real_escape_string($con,$_POST['email']);
+    $pwd = mysqli_real_escape_string($con,$_POST['pwd']);
+    $phone = mysqli_real_escape_string($con,$_POST['phone']);
+    $address = mysqli_real_escape_string($con,$_POST['address']);
+    
+    $sign_up = new signup($fname,$lname,$email,$pwd,$phone,$address);
+    $sign_up->insert();
+    
+    $conn->connect()->close();
+}
 ?>

@@ -4,6 +4,17 @@
    if(!isset( $_SESSION['admin'] ) ) {
       header('location:index.php');
     }
+    
+   if(isset($_GET['msg'])){
+    $msg=$_GET['msg'];
+    
+    if ($msg=='error')
+        echo "<script>alert('sorry, there was an error...')</script>";
+            
+    if ($msg=='success')
+        echo "<script>alert('Thank you for ordering food, you food will be delivered within a minute...')</script>";
+}
+
     include('includes/array.php') 
 ?>
 <!DOCTYPE html>
@@ -30,6 +41,7 @@
 <header>
     <nav>
         <ul>
+            <li><a class="logout" href="cart.php">Cart</a></li>
             <li><a class="logout" href="assets_back/logout.class.php">LOGOUT</a></li>
         </ul>
     </nav>
