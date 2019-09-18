@@ -10,7 +10,7 @@
         include('includes/header.php');
     } 
     else{
-    ?>
+?>
         <!DOCTYPE html>
         <html lang="en">
         <head>

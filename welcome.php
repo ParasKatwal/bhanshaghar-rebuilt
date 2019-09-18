@@ -117,19 +117,19 @@
             </div>
             <div class="col-sm-12 col-md-4">
                 <a href="">
-                    <img src="assets_front/img/mo.jpg" alt="">
+                    <img src="assets_front/img/chowmin.jpg" alt="">
                     <div class="info">
-                        <h5>Momo</h5>
-                        <p>Price: NPR 200</p>
+                        <h5>Chowmin</h5>
+                        <p>Price: NPR 250</p>
                     </div>
                 </a>
             </div>
             <div class="col-sm-12 col-md-4">
                 <a href="">
-                    <img src="assets_front/img/mo.jpg" alt="">
+                    <img src="assets_front/img/roti.jpg" alt="">
                     <div class="info">
-                        <h5>Momo</h5>
-                        <p>Price: NPR 200</p>
+                        <h5>Roti</h5>
+                        <p>Price: NPR 100</p>
                     </div>
                 </a>
             </div>
