@@ -598,6 +598,32 @@ footer .logo h2 {
   padding: 10px 30px;
 }
 
+.user {
+  margin-top: 30px;
+}
+
+.user span {
+  font-weight: bolder;
+}
+
+.recommendation h3 {
+  background: #ff3e3e;
+  color: white;
+  display: block;
+  margin: 30px 0;
+  padding: 10px;
+}
+
+.recommendation img {
+  width: 100%;
+  border: 5px solid #ff3e3e;
+}
+
+.recommendation .info {
+  background: #eeeeee;
+  padding: 20px;
+}
+
 @-webkit-keyframes aaa {
   0% {
     left: -110%;
