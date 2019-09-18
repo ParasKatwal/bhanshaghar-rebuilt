@@ -1,4 +1,6 @@
 <?php 
+    if (isset($_GET['item'])){
+        
     define("Title","MENU");
     include('includes/header.php'); 
 
@@ -13,7 +15,19 @@
     // if (isset($_GET['item'])) {
     //     $menu = strip_bad_chars( $_GET['item'] );
     //     $dish = $menuItem[$menu];
-    // }
+    // )
+    
+        
+    $item_id = $_GET['item'];
+    
+    include_once('assets_back/item.class.php');
+    
+    $item = new item($item_id);
+    $item_array = $item->select();
+    
+    if(!$item_array){
+        echo "There is no item of id ".$item_id;
+    }else{
 ?>
 
 <div class="food">
@@ -24,14 +38,26 @@
                     <img src="assets_front/img/mo.jpg" alt="">
                 </div>
                 <div class="food-info">
-                    <h2>Buff Momo</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nesciunt earum, placeat provident omnis repellendus dignissimos exercitationem ducimus libero blanditiis.</p>
-                    <span>Price: NPR 200</span><br>
-                    <button class="btn">CheckOut</button>
+                    <h2><?php echo $item_array['title']; ?></h2>
+                    <p><?php echo $item_array['blurb']; ?></p>
+                    <span>Price: NPR <?php echo $item_array['price']; ?></span><br>
+                    <button class="btn" onclick="notify_login();">Add to Cart</button>
+                    <script>
+                        function notify_login(){
+                            alert("please login to order the food...");
+                        }
+                    </script>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<?php include('includes/footer.php') ?>    
+<?php 
+}
+include('includes/footer.php');
+}
+else{
+    echo "Error: there is no page, not found....";
+}
+?>    

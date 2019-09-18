@@ -11,15 +11,15 @@
                 <h4>Hot Drinks</h4>
                 <ul>
                     <?php foreach($menuItem as $coffee => $item) { ?>
-                        <li class="center"><a href="food.php?item=<?php echo $coffee ?>"><?php echo $item['title'] ?></a><sup> NPR </sup><?php echo $item['price'] ?></li>
+                        <li class="center"><a href="food.php?item=<?php echo $item['id']; ?>"><?php echo $item['title'] ?></a><sup> NPR </sup><?php echo $item['price'] ?></li>
                     <?php } ?>
                 </ul>
             </div>
             <div class="menu-box col-sm-12 col-md-3">
                 <h4>Cold Drinks</h4>
                 <ul>
-                    <?php foreach($menuItem2 as $coffee => $item) { ?>
-                        <li class="center"><a href="food.php?item=<?php echo $coffee ?>"><?php echo $item['title'] ?></a><sup> NPR </sup><?php echo $item['price'] ?></li>
+                    <?php foreach($menuItem2 as $drink => $item) { ?>
+                        <li class="center"><a href="food.php?item=<?php echo $item['id']; ?>"><?php echo $item['title'] ?></a><sup> NPR </sup><?php echo $item['price'] ?></li>
                     <?php } ?>
                 </ul>
             </div>
@@ -27,7 +27,7 @@
                 <h4>MoMo</h4>
                 <ul>
                     <?php foreach($menuItem3 as $momo => $item) { ?>
-                        <li class="center"><a href="food.php?item=<?php echo $momo ?>"><?php echo $item['title'] ?></a><sup> NPR </sup><?php echo $item['price'] ?></li>
+                        <li class="center"><a href="food.php?item=<?php echo $item['id']; ?>"><?php echo $item['title'] ?></a><sup> NPR </sup><?php echo $item['price'] ?></li>
                     <?php } ?>
                 </ul>
             </div>
