@@ -598,6 +598,18 @@ footer .logo h2 {
   padding: 10px 30px;
 }
 
+header nav {
+  margin: 10px;
+}
+
+header .logout {
+  background: #ff3e3e;
+  color: white;
+  border-radius: 10px;
+  font-size: 15px;
+  padding: 5px 20px;
+}
+
 .user {
   margin-top: 30px;
 }

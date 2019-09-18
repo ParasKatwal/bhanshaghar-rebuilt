@@ -25,7 +25,7 @@
 <header>
     <nav>
         <ul>
-            <li><a id="poplog" class="poplog" href="#">LOGOUT</a></li>
+            <li><a class="logout" href="#">LOGOUT</a></li>
         </ul>
     </nav>
 </header>
