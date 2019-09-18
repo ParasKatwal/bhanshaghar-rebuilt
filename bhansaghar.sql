@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 18, 2019 at 09:43 AM
+-- Generation Time: Sep 18, 2019 at 05:36 PM
 -- Server version: 10.1.19-MariaDB
 -- PHP Version: 5.6.28
 
@@ -58,14 +58,14 @@ INSERT INTO `menu` (`id`, `title`, `price`, `image`, `blurb`, `type`) VALUES
 (2, 'Americano', '50', 'americano.jpg', 'CaffÃ¨ Americano or Americano is a type of coffee drink prepared by diluting an espresso with hot water, giving it a similar strength to, but different flavor from, traditionally brewed coffee.', 'hot drinks'),
 (3, 'Cappuccino', '50', 'cappuccino.jpg', 'A cappuccino is an espresso-based coffee drink that originated in Italy, and is traditionally prepared with steamed milk foam.', 'hot drinks'),
 (4, 'Latte', '40', 'latte.jpg', 'A latte is a coffee drink made with espresso and steamed milk. The term as used in English is a shortened form of the Italian caffÃ¨ latte, caffelatte or caffellatte, which means milk coffee.', 'hot drinks'),
-(5, 'Coco-Cola', '40', 'espresso.jpg', 'Coca cola is suitable with every dishes. Especially try the combo with momo.', 'soft drinks'),
-(6, 'Sprite', '45', 'americano.jpg', 'Sprite makes your mood on, because it makes every thing clear to you. Sprite makes every thing clear.', 'soft drinks'),
-(7, 'Fanta', '45', 'cappuccino.jpg', 'Drick Fanta to be Fantastic. See for yourself how this drink makes your tongue feel the thing within you.', 'soft drinks'),
-(8, 'Slice', '45', 'latte.jpg', 'Even in the winter, you get to taste the real mango. Its pure juice extracted from the mango, taste it. You will like Slice even more than the mango itself.', 'soft drinks'),
-(9, 'Buff Momo', '90', 'espresso.jpg', 'Buff momo should not be explained, this blurp would be unnecessay. Everyone knows how popular is the buff momo, cuz of its taste.', 'momo'),
-(10, 'Veg Momo', '50', 'americano.jpg', 'Don''t worry if you are vegetarian and could not taste the meat, cuz this veg momo challanges every meat in this world.', 'momo'),
-(11, 'Chiken Momo', '100', 'cappuccino.jpg', 'Best chicken momo made form the fresh meat. Guarantee you that you will never forget the taste.', 'momo'),
-(12, 'Pork Momo', '120', 'latte.jpg', 'This pork momo will make you feel royal. You will ask for the castle after having this, so please enjoy royalness.', 'momo');
+(5, 'Coco-Cola', '40', 'coco-cola.jpg', 'Coca cola is suitable with every dishes. Especially try the combo with momo.', 'soft drinks'),
+(6, 'Sprite', '45', 'sprite.jpg', 'Sprite makes your mood on, because it makes every thing clear to you. Sprite makes every thing clear.', 'soft drinks'),
+(7, 'Fanta', '45', 'fanta.jpg', 'Drick Fanta to be Fantastic. See for yourself how this drink makes your tongue feel the thing within you.', 'soft drinks'),
+(8, 'Slice', '45', 'slice.jpg', 'Even in the winter, you get to taste the real mango. Its pure juice extracted from the mango, taste it. You will like Slice even more than the mango itself.', 'soft drinks'),
+(9, 'Buff Momo', '90', 'momos.jpg', 'Buff momo should not be explained, this blurp would be unnecessay. Everyone knows how popular is the buff momo, cuz of its taste.', 'momo'),
+(10, 'Veg Momo', '50', 'momos.jpg', 'Don''t worry if you are vegetarian and could not taste the meat, cuz this veg momo challanges every meat in this world.', 'momo'),
+(11, 'Chiken Momo', '100', 'momos.jpg', 'Best chicken momo made form the fresh meat. Guarantee you that you will never forget the taste.', 'momo'),
+(12, 'Pork Momo', '120', 'momos.jpg', 'This pork momo will make you feel royal. You will ask for the castle after having this, so please enjoy royalness.', 'momo');
 
 -- --------------------------------------------------------
 
