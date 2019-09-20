@@ -111,7 +111,7 @@
                     echo "<script>function checkout(){location.replace('".$link."');}</script>";
                 }    
             }else{
-                echo "<td colspan='3'>There is no item in your cart<td>";
+                echo "<tr><td colspan='3'>There is no item in your cart</td></tr>";
             }
             echo "<tr><td colspan='3'><a href='welcome.php'>Back</a></td></tr>";
             ?>
