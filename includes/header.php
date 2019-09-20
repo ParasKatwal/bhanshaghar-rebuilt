@@ -4,6 +4,10 @@
         session_start(); 
     } 
     
+    if(isset( $_SESSION['bhanshaghar_admin'] ) ) {
+            header('location:admin.php');  
+    }
+        
     if(isset($_SESSION['admin']))
        header('location:welcome.php');
     

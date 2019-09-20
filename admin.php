@@ -1,4 +1,8 @@
 <?php
+session_start();
+if(!isset( $_SESSION['bhanshaghar_admin'] ) ) {
+    header('location:index.php');  
+}
 include_once('assets_back/users.class.php');
 ?>
 <!DOCTYPE html>
