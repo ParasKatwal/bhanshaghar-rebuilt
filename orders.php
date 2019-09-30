@@ -3,7 +3,7 @@ session_start();
 if(!isset( $_SESSION['bhanshaghar_admin'] ) ) {
     header('location:index.php');  
 }
-include_once('assets_back/users.class.php');
+include_once('assets_back/orders.class.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -29,7 +29,7 @@ include_once('assets_back/users.class.php');
     <header>
         <nav>
             <ul>
-                 <li><a class="logout" href="orders.php">Orders</a></li>
+                <li><a class="logout" href="admin.php">Home</a></li>
                 <li><a class="logout" href="assets_back/logout.class.php">LOGOUT</a></li>
             </ul>
         </nav>
@@ -58,34 +58,32 @@ include_once('assets_back/users.class.php');
     </section>
     
     <section class="user">
-        <h1 class="text-center title">Welcome, <span>ADMIN</span></h1>
-    </section>
-    
-    <section class="user">
-        <h4 class="text-center title"><span>Users list</span></h4>
-        <table style="text-align:center;margin: auto;">
+        <h4 class="text-center title"><span>Orders</span></h4>
+        <table style="text-align:center;margin: auto; width:90%">
             <thead>
-                <th>Id</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Address</th>
-                <th>Contact</th>
+                <th>Order_id.</th>
+                <th>UserName</th>
+                <th>email</th>
+                <th>Orders</th>
+                <th>Total Price</th>
+                <th>Order DateTime</th>
             </thead>
             <?php
-                $users = new users();
-                $user = $users->select();
-                if(count($user)>0){
-                    foreach($user as $u => $property){
+                $orders = new orders();
+                $order = $orders->select();
+                if(count($order)>0){
+                    foreach($order as $o => $property){
                         echo "<tr>";
-                            echo "<td>".$u."</td>";
-                            echo "<td>".$property['name']."</td>";
+                            echo "<td>".$o."</td>";
+                            echo "<td>".$property['username']."</td>";
                             echo "<td>".$property['email']."</td>";
-                            echo "<td>".$property['address']."</td>";
-                            echo "<td>".$property['contact']."</td>";
+                            echo "<td>".$property['orders']."</td>";
+                            echo "<td>".$property['total_price']."</td>";
+                            echo "<td>".$property['order_time']."</td>";
                         echo "</tr>";
                     }   
                 }else{
-                    echo "<tr><td colspan='3'>There is no users</td></tr>";
+                    echo "<tr><td colspan='6'>There is no orders</td></tr>";
                 }
             ?>
         </table>
