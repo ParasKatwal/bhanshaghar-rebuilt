@@ -70,6 +70,7 @@ include_once('assets_back/users.class.php');
                 <th>Email</th>
                 <th>Address</th>
                 <th>Contact</th>
+                <th>Action</th>
             </thead>
             <?php
                 $users = new users();
@@ -82,10 +83,12 @@ include_once('assets_back/users.class.php');
                             echo "<td>".$property['email']."</td>";
                             echo "<td>".$property['address']."</td>";
                             echo "<td>".$property['contact']."</td>";
+                            echo "<td><a style='background:#dad7d7;border:none;border-radius:4px;' href='assets_back/delete_user.class.php?id=$u'>
+                            <i class='fa fa-trash' aria-hidden='true'></i></a></td>";
                         echo "</tr>";
                     }   
                 }else{
-                    echo "<tr><td colspan='3'>There is no users</td></tr>";
+                    echo "<tr><td colspan='6'>There is no users</td></tr>";
                 }
             ?>
         </table>

@@ -8,9 +8,9 @@ class orders extends db{
         $sql = "select * from food_order";
         $result = $this->connect()->query($sql);
         $numrows = $result->num_rows;
+        $orders =  array();
         
         if($numrows>0){
-            $orders =  array();
             while($row = $result->fetch_assoc()){
                 $sql = "select * from user where id=".$row['user_id'];
                 $r = $this->connect()->query($sql);

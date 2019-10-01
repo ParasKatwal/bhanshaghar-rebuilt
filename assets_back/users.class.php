@@ -8,9 +8,9 @@ class users extends db{
         $sql = "select * from user";
         $result = $this->connect()->query($sql);
         $numrows = $result->num_rows;
+        $user =  array();
         
         if($numrows>0){
-            $user =  array();
             while($row = $result->fetch_assoc()){
                 $user[$row['id']]['name'] = $row['first_name']." ".$row['last_name'];
                 $user[$row['id']]['email'] = $row['email'];

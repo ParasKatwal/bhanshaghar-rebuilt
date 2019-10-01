@@ -67,6 +67,7 @@ include_once('assets_back/orders.class.php');
                 <th>Orders</th>
                 <th>Total Price</th>
                 <th>Order DateTime</th>
+                <th>action</th>
             </thead>
             <?php
                 $orders = new orders();
@@ -80,6 +81,8 @@ include_once('assets_back/orders.class.php');
                             echo "<td>".$property['orders']."</td>";
                             echo "<td>".$property['total_price']."</td>";
                             echo "<td>".$property['order_time']."</td>";
+                            echo "<td><a style='background:#dad7d7;border:none;border-radius:4px;' href='assets_back/delete_order.class.php?id=$o'>
+                                <i class='fa fa-trash' aria-hidden='true'></i></a></td>";
                         echo "</tr>";
                     }   
                 }else{
